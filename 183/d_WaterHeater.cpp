@@ -22,7 +22,7 @@ int main() {
         int s, t, p;
         cin >> s >> t >> p;
         volume[s] += p;
-        volume[t] += -p;
+        volume[t] -= p;
     }
     ll heater = 0;
     for(auto& elem: volume) {
